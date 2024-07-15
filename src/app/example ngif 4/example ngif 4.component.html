@@ -1,0 +1,11 @@
+<h1>example 4</h1>
+<input type="email" #emailInput placeholder="Enter your email">
+<button (click)="checkEmail(emailInput.value)">Check</button>
+
+<div *ngIf="isValidEmail" class="success-message">
+  Success, a valid email!
+</div>
+
+<div *ngIf="!isValidEmail && emailInput.value !== '' "class="error-message">
+  Error: Please enter a valid email.
+</div>

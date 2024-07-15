@@ -1,0 +1,12 @@
+<h1>example 3</h1>
+<div>
+<div> counter :{{counter}}
+</div>
+<button (click) = "increase()"> increase</button>
+<div *ngIf="counter%2==0">
+    <p class="even">even</p>
+</div>
+<div *ngIf="counter%2==1">
+    <p class="odd">even</p>
+</div>
+</div>
